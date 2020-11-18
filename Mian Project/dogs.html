@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Dogs</title>
+    <link rel="stylesheet" href="./dogs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="center">
+        <a href="./homepage.html">
+            <img src="./Logo.png" alt="Take Me Home">
+        </a>
+    </div>
+    <div class="navbar">
+        <a href="./homepage.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn" onmouseover="myFunction1In()" onmouseout="myFunction1Out(this)">Adopt
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown1">
+                <a href="./dogs.html">Dogs</a>
+                <a href="./cats.html">Cats</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onmouseover="myFunctionIn2()" onmouseout="myfunctionout2(this)">About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown2">
+                <a href="#">Overview</a>
+                <a href="#">Meet The Team</a>
+                <a href="#">Sponsors</a>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <a href="#">Sign In</a>
+            <a href="#">Register</a>
+        </div>
+    </div>
+    <div id="accordion">
+  
+    </div>
+
+</body>
+
+<script src="./dogs.js"></script>
+
+</html>
