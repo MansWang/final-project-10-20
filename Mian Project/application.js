@@ -49,15 +49,28 @@ const container = document.getElementById('block');
     container.innerHTML += content;
 
     function successsubmit(){
-        if (window.confirm('You are ready to submit your application?'))
-        {
-            window.location.href= "google.com";
-        }
-        else
-        {
-            // They clicked no
-        }
+        // e.preventDefault();
+        window.location= "google.com";
+        // if (window.confirm('You are ready to submit your application?'))
+        // {
+        //     window.location.href= "google.com";
+        // }
+        // else
+        // {
+        //     // They clicked no
+        // }
+
+        redirectPage = "myorderpage.aspx?mode=0&mtf=False&orderno=" + orderNo;     
+        window.location = redirectPage;     
+        return false;
   
+    }
+    function sendmail() { 
+        if (window.confirm('You are ready to submit your application?'))
+         {
+            window.location.href = "./homepage.html";
+        }
+     return false;
     }
 
     
